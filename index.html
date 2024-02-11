@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company News Informer</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Company News Informer</h1>
+      <p>
+        This code defines two functions, informEmployees and calculateTime, to
+        determine the maximum time needed to inform all employees in a company
+        starting from the head of the company. The informEmployees function is a
+        recursive function that uses Depth-First Search (DFS) to calculate the
+        time needed, while the calculateTime function is responsible for getting
+        user inputs, validating them, and calling the informEmployees function
+        with the provided data.
+      </p>
+      <label for="nEmployees">Number of employees:</label>
+      <input type="number" id="nEmployees" min="1" />
+      <label for="headID">Head of the company ID:</label>
+      <input type="number" id="headID" min="0" />
+      <button onclick="calculateTime()">Calculate Minutes</button>
+      <p id="result"></p>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
